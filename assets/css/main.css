@@ -2105,7 +2105,7 @@ input, select, textarea {
 .work-item {
     display: flex;
     align-items: flex-start; /* Vertically align items to the top */
-    margin-bottom: 20px; /* Add margin for spacing between items */
+    margin-bottom: 10px; /* Add margin for spacing between items */
 }
 
 .image-container {
