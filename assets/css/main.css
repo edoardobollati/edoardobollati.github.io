@@ -181,25 +181,27 @@ input, select, textarea {
 		}
 	
 		h2 {
-			font-size: 1.5em;
-			line-height: 1em;
+    			font-size: 1.5em;
+    			line-height: 1em;
+    			margin-bottom: 0.5em; /* Reduces space below h2 */
 		}
 
 		p {
-			font-size: 1em;
-			line-height: 1.5em;
+    			font-size: 1em;
+    			line-height: 1.5em;
 		}
 
 		h2 strong {
-			display: inline-block; /* Maintain inline layout */
-			font-size: inherit; /* Inherit font size from parent h2 element */
-			transform: scale(1.2); /* Adjust the scale value as needed */
-			text-align: center;
+    		display: inline-block;
+    		font-size: inherit;
+    		transform: scale(1.2);
+    		text-align: center;
 		}
-	
+
 		h3 {
-			font-size: 1em;
-			line-height: 1.5em;
+    		font-size: 1em;
+    		line-height: 1.5em;
+    		margin-top: 0.5em; /* Reduces space above h3 */
 		}
 	
 		h4 {
