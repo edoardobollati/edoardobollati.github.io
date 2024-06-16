@@ -183,7 +183,7 @@ input, select, textarea {
 		h2 {
     			font-size: 1.5em;
     			line-height: 1em;
-    			margin-bottom: 0.5em; /* Reduces space below h2 */
+    			margin-bottom: 0.2em; /* Reduces space below h2 */
 		}
 
 		p {
@@ -201,7 +201,7 @@ input, select, textarea {
 		h3 {
     		font-size: 1em;
     		line-height: 1.5em;
-    		margin-top: 0.5em; /* Reduces space above h3 */
+    		margin-top: 0.2em; /* Reduces space above h3 */
 		}
 	
 		h4 {
