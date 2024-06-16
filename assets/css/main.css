@@ -181,6 +181,7 @@ input, select, textarea {
 		}
 	
 		h2 {
+			margin-top: 0.2em
     			font-size: 1.5em;
     			line-height: 1em;
     			margin-bottom: 0.2em; /* Reduces space below h2 */
