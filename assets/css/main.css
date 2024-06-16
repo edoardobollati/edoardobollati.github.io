@@ -124,13 +124,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #A53F53;
+		color: rgb(204, 0, 43);
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #A53F53 !important;
+			color: rgb(204, 0, 43) !important;
 			text-decoration: none;
 		}
 
@@ -2160,7 +2160,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
-		 color: #A53F53;
+		 color: rgb(204, 0, 43);
 	}
 
 		.icon:before {
@@ -2174,7 +2174,7 @@ input, select, textarea {
     			text-transform: none !important;
     			font-family: 'Font Awesome 5 Free';
     			font-weight: 400;
-    			color: #A53F53; /* Add this line to change the color */
+    			color: rgb(204, 0, 43); /* Add this line to change the color */
 		}
 
 		.icon > .label {
