@@ -286,11 +286,11 @@ input, select, textarea {
 /* Style for the title */
 .content h3 {
     margin: 0; /* Reset the default margin */
-	color: rgb(32, 34, 110) !important;
+	color: rgb(204, 0, 43) !important;
 }
 
 .content h3 strong {
-    color: rgb(47, 47, 218) !important;
+    color: rgb(204, 0, 43) !important;
 }
 
 /* Style for the text below the title */
