@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edoardo Bollati — PhD Economics @ Cornell University</title>
+  <meta name="description" content="Edoardo Bollati's academic website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111111;
+      --muted:#444444;
+      --border:#e5e7eb;
+      --cranberry:#cc002b;
+      --logo-red:#b31b1b;
+    }
+
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+    }
+    a { color: var(--logo-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+
+    .shell { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+    .grid { display: grid; grid-template-columns: 320px minmax(0,1fr); gap: 2rem; }
+
+    aside { position: sticky; top: 1rem; align-self: start; }
+    .side-name { font-weight: 800; font-size: 1.6rem; margin: 0; }
+    .side-affil { color: var(--muted); margin: .15rem 0 .6rem; }
+    .iconbar { display: flex; gap: .85rem; align-items: center; margin: .25rem 0 1rem; }
+    .iconbar a { line-height: 0; }
+    .iconbar svg { width: 22px; height: 22px; fill: var(--logo-red); }
+    .side-photo { margin: 0 0 1rem; }
+
+    main { min-width: 0; }
+
+    /* Section headings (logo red) */
+    .section-title { font-size: 1.35rem; color: var(--logo-red); margin: 2rem 0 .75rem; }
+
+    /* Ultra-light section dividers */
+    section + section {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #eee;
+    }
+
+    .list { background: var(--bg); border: 0; }
+    .entry { border-top: 1px solid var(--border); padding: 1rem 0; }
+    .entry:first-child { border-top: 0; }
+    .title { font-weight: 800; color: var(--fg); }
+    .meta { color: var(--muted); }
+    .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: .35rem; }
+
+    details { margin-top: .35rem; }
+    summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--fg);
+      font-weight: 700;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary:after { content: "▾"; margin-left: auto; color: #888; }
+    details[open] summary:after { content: "▴"; }
+    .abstract { margin-top: .5rem; color: var(--fg); }
+
+    footer { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; color: #666; }
+
+    @media (max-width: 980px) {
+      .grid { grid-template-columns: 1fr; }
+      aside { position: static; }
+    }
+
+    /* --- Your requested tweaks --- */
+
+    /* 1) Justify About + Abstract text */
+    #about p {
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+    .abstract {
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    /* 2) Reduce gap under section titles for WP/WIP only */
+    #wp .section-title,
+    #wip .section-title {
+      margin: 2rem 0 0.35rem; /* tighter bottom margin */
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="grid">
+      <aside>
+        <h1 class="side-name">Edoardo Bollati</h1>
+        <div class="side-affil">Economics Ph.D. Candidate @ Cornell University</div>
+        <div class="iconbar">
+          <a href="https://x.com/BollatiEdoardo" aria-label="Twitter/X" title="Twitter/X">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.244 2H21l-6.5 7.43L22.5 22H15l-4.77-6.41L4.5 22H2l7.09-8.1L1.5 2h7l4.27 5.77L18.244 2Zm-2.744 18h1.756L8.5 4h-1.76l8.76 16Z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/edoardobollati" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.21 3.38 9.62 8.07 11.18.59.11.8-.26.8-.58l-.02-2.03c-3.28.73-3.97-1.58-3.97-1.58-.54-1.4-1.33-1.77-1.33-1.77-1.09-.77.08-.76.08-.76 1.2.09 1.83 1.25 1.83 1.25 1.07 1.87 2.81 1.33 3.5 1.02.11-.8.42-1.33.76-1.64-2.62-.31-5.38-1.34-5.38-5.97 0-1.32.46-2.39 1.22-3.23-.12-.3-.53-1.55.12-3.23 0 0 .99-.32 3.24 1.23a11.1 11.1 0 0 1 5.9 0c2.25-1.55 3.24-1.23 3.24-1.23.65 1.68.24 2.93.12 3.23.76.84 1.22 1.91 1.22 3.23 0 4.64-2.76 5.65-5.4 5.96.43.37.81 1.1.81 2.23l-.01 3.3c0 .33.21.71.81.59A11.5 11.5 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5Z"/>
+            </svg>
+          </a>
+          <a href="mailto:eb636@cornell.edu" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13A2.5 2.5 0 0 1 19.5 21h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.5-.5 7.5 5 7.5-5H4.5Zm15 2.3-7.35 4.9a1 1 0 0 1-1.3 0L3.5 7.3v11.2c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5V7.3Z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="side-photo">
+          <img src="images/profilepic.jpg" alt="Edoardo Bollati" />
+        </div>
+      </aside>
+
+      <main>
+        <section id="about">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            Hello! My name is Edoardo Bollati and I'm a fifth-year Economics Ph.D. candidate at Cornell University.
+            Most of my ongoing work sits at the intersection of political economy and the economics of media.
+          </p>
+          <p>
+            I hold an M.Sc. in Economics (with Distinction) from the University of Warwick. Prior to moving to Cornell,
+            I worked at the Stockholm School of Economics and at Queen Mary University of London. I also worked at the
+            Development and Cooperation Directorate of the OECD.
+          </p>
+          <p>
+            You can find a copy of
+            <a href="cv/112025_BollatiCV.pdf" target="_blank" rel="noopener">my CV here</a>.
+            You can contact me at
+            <a href="mailto:eb636@cornell.edu">eb636@cornell.edu</a>.
+          </p>
+        </section>
+
+        <section id="wp">
+          <h2 class="section-title">Working Papers</h2>
+          <div class="list">
+            <div class="entry">
+              <div class="title">High-Speed Broadband Internet and the Rise of Populism: Evidence from Italian Elections</div>
+              <div class="links">
+                <a href="mailto:eb636@cornell.edu?subject=Working%20paper%20request%20-%20Broadband%20and%20Populism">
+                  paper available upon request
+                </a>
+              </div>
+              <details>
+                <summary>Abstract</summary>
+                <div class="abstract">
+                  In this paper I study whether exposure to high-speed broadband Internet explains the increasing electoral
+                  success of populist parties. Thanks to novel data on high-speed broadband coverage and on the completion
+                  dates of a government intervention that expanded exposure to high-speed broadband across Italy, in a
+                  difference-in-differences design I assess the impact of being exposed to high-speed broadband prior to
+                  elections on the vote share of populist parties, their political non-populist competition and on turnout
+                  both at Parliamentary and European elections. I show that municipalities that were exposed to high-speed
+                  broadband before the 2018 Parliamentary elections experienced a 2.9 percentage point (6%) increase in
+                  support for populist parties relative to municipalities that remained uncovered until after elections.
+                  This rise is primarily attributed to parties like the 5 Star Movement and Forza Italia, known for their
+                  effective use of online platforms for political campaigning. The decline in support for leftist
+                  non-populist parties, and the noisy positive effects on turnout suggest that the channel through which
+                  high-speed broadband plays a role is vote switching, rather than connection to a disenchanted electorate.
+                  I also show that the effects are less pronounced in European elections, hinting at a “marginal voters
+                  mechanism” where high-speed broadband disproportionately influences undecided voters that search online
+                  for last minute pieces of information close to election day, leading to a greater persuasion effect at
+                  more salient elections.
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section id="wip">
+          <h2 class="section-title">Works in Progress</h2>
+          <div class="list">
+            <div class="entry">
+              <div class="title">Chasing The American Dream (JMP)</div>
+              <div class="meta">(with V. Triantafyllou)</div>
+            </div>
+            <div class="entry">
+              <div class="title">When Coal Plants Shut Down: Populism and Polarization In The Green Transition</div>
+              <div class="meta">(with V. Triantafyllou)</div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <small>© <span id="year"></span> Edoardo Bollati</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
